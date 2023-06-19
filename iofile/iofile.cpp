@@ -3,11 +3,11 @@
 #include <string>
 using namespace std;
 
-int main () {
+int main() {
 	string baris;
 
 	//membuka file dalam mode menulis.
-	ofstream outfile;   
+	ofstream outfile;
 	//menunjuk ke sebuah nama file
 	outfile.open("contohfile.txt");
 
@@ -44,3 +44,7 @@ int main () {
 		//tutup file tersebut setelah selesai
 		infile.close();
 	}
+	//jika tidak ditemukan file maka akan menampilkan ini
+	else cout << "unable to open file";
+	return 0;
+}
